@@ -158,7 +158,7 @@ text-align: center;
     font-size:25px;
     /* margin-left:30px; */
 }
-#input-number{
+.input-number{
     outline: none;
     text-align:center;
     font-size:20px;
@@ -266,4 +266,8 @@ text-align: center;
     min-height: 100px;
     margin:10px;
     width: 22vw;
+}
+.radiocheckbtnlable{
+    font-size:25px;
+    color:white;
 }

@@ -1,54 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="hero col-12">
-                <video autoplay loop muted plays-inline class="background-video">
-                    <source src="images/bgvideo.mp4">
-                  </video>
-                  <nav class="navbar navbar-expand-lg navbar-light Nav-Bar  ">
-                    <div class="container-fluid ">
-                      <a class="navbar-brand text-white text-center GenerateArt" href="index.html">Generate Art</a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon" style="color:white;"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav ms-auto">
-                          <li class="nav-item dropdown text-white">
-                            <a class="nav-link dropdown-toggle text-white text-center Projects" href="#"
-                              id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Projects
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                              <li><a class="dropdown-item text-white" href="passwordgen.html">Password Generation</a></li>
-                              <li><a class="dropdown-item text-white" href="mapgen.html">Map Generation</a></li>
-                              <li><a class="dropdown-item text-white" href="wallpapergen.html">Wallpaper Generation</a></li>
-                              <li><a class="dropdown-item text-white" href="abstractartgen.html">Abstract Art Generation</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active text-white text-center Documets" aria-current="page" href="#">Document</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-white text-center About-us" href="aboutus.html">About Us</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="hero col-12">
+        <video autoplay loop muted plays-inline class="background-video">
+          <source src="images/bgvideo.mp4">
+        </video>
+        <nav class="navbar navbar-expand-lg navbar-light Nav-Bar  ">
+          <div class="container-fluid ">
+            <a class="navbar-brand text-white text-center GenerateArt" href="index.html">Generate Art</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" style="color:white;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown text-white">
+                  <a class="nav-link dropdown-toggle text-white text-center Projects" href="#"
+                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Projects
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item text-white" href="passwordgen.html">Password Generation</a></li>
+                    <li><a class="dropdown-item text-white" href="mapgen.html">Map Generation</a></li>
+                    <li><a class="dropdown-item text-white" href="wallpapergen.html">Wallpaper Generation</a></li>
+                    <li><a class="dropdown-item text-white" href="abstractartgen.html">Abstract Art Generation</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-white text-center Documets" aria-current="page" href="#">Document</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white text-center About-us" href="aboutus.html">About Us</a>
+                </li>
+              </ul>
             </div>
+          </div>
+        </nav>
+        <hr style="border:1px solid white;margin-top:30px;">
+        <div class="col-12">
+          <h1 class="text-white whythisproject">About Us</h1>
+          <h4 class="text-white whythisproject">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+            laboriosam
+            sed harum suscipit cumque accusamus ex. Excepturi veniam ducimus culpa sed reprehenderit, minus libero ipsam
+            at maxime unde corrupti debitis atque eius, laborum consectetur laudantium, recusandae dolores voluptas
+            expedita alias!</h4>
         </div>
+        <hr style="  border: 1px solid rgb(255, 255, 255);">
+      </div>
+      <div class="col-12 paswordgenbox d-lg-flex ">
+        <div class="d-flex justify-content-center align-content-center">
+          <img src="images/user.jpg" alt="passwordimage" class="col-lg-6 passwordimge">
+        </div>
+        <div>
+          <h1 class="password-h1 text-white col-lg-auto">Bhushan Mahajan</h1>
+          <h4 class=" password-h2 text-white col-lg-auto">
+            Password Generator will provide randomly generated passwords which would be derived from the images
+            created using various image generation algorithms/scripts such as EPWT and Python’s in-built</h4>
+        </div>
+      </div>
+      <!-- Map Generation Box  -->
+      <div class="col-12 paswordgenbox d-lg-flex">
+        <div class="d-flex justify-content-center align-content-center">
+          <img src="images/user.jpg" alt="passwordimage" class="col-lg-6 passwordimge">
+        </div>
+        <div>
+          <h1 class="password-h1 text-white col-lg-auto">Aditya Kadam</h1>
+          <h4 class=" password-h2 text-white col-lg-auto">
+            A small set of Python functions to draw pretty maps from OpenStreetMap data. Based on matplotlib and
+            shapely libraries. Prettymapp is a webapp to create beautiful 
+          </h4>
+        </div>
+      </div>
+      <!-- Wallpaper Generation Box  -->
+      <div class="col-12 paswordgenbox d-lg-flex">
+        <div class="d-flex justify-content-center align-content-center">
+          <img src="images/user.jpg" alt="passwordimage" class="col-lg-6 passwordimge">
+        </div>
+        <div>
+          <h1 class="password-h1 text-white col-lg-auto">Deven Waykar</h1>
+          <h4 class=" password-h2 text-white col-lg-auto">
+            Wallpaper basically refers to a design or image that you can choose to have as a background. We have
+            created a script that will provide users creative 
+          </h4>
+        </div>
+      </div>
+      <!-- Abstract Art Generation Box -->
+      <div class="col-12 paswordgenbox d-lg-flex">
+        <div class="d-flex justify-content-center align-content-center">
+          <img src="images/user.jpg" alt="passwordimage" class="col-lg-6 passwordimge">
+        </div>
+        <div>
+          <h1 class="password-h1 text-white col-lg-auto">Vaishnavi Bhagde</h1>
+          <h4 class=" password-h2 text-white col-lg-auto">Abstract art is art that does not attempt to represent an
+            accurate depiction of a visual reality but instead use shapes, colours, forms and gestural 
+          </h4>
+        </div>
+      </div>
     </div>
-    <script src="Bootstrap/js/bootstrap.bundle.js"></script>
+    </div>
+  </div>
+  <script src="Bootstrap/js/bootstrap.bundle.js"></script>
 </body>
+<div class="container-fluid">
+  <footer class="win-1-footer">
+    <h1 class="text-white footertext">You will always be welcome</h1>
+    <hr style="  border: 1px solid rgb(255, 255, 255);">
+    <div class="d-flex align-content-center justify-content-evenly">
+      <a href="">
+        <img src="images/LinkedIn.png" class="socialmedia-icon" alt="">
+      </a>
+      <a href="">
+        <img src="images/Instagram.png" class="socialmedia-icon" alt="">
+      </a>
+      <a href="">
+        <img src="images/Twitter.png" class="socialmedia-icon" alt="">
+      </a>
+      <a href="">
+        <img src="images/Facebook.png" class="socialmedia-icon" alt="">
+      </a>
+    </div>
+  </footer>
+</div>
 </html>
