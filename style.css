@@ -1,0 +1,230 @@
+/* index page CSS */
+* {
+   margin:0px;
+   padding:0px;
+    /* border:1px solid red; */
+   
+}
+body{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position:relative;
+    padding:0 5%;
+}
+
+.background-video{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    background-attachment: fixed;
+    position: fixed;
+}
+
+.Nav-Bar{
+    position: relative;
+    background-color: transparent;
+    color:white;
+}
+.dropdown-menu{
+    background-color: transparent;
+    box-shadow: 1px 2px 2px black;
+   
+}
+.dropdown-item{
+    transition-property: all;
+    transition-duration:200ms;
+    /* transition-delay: 40ms; */
+    transition-timing-function: ease-in-out;
+   
+}
+.dropdown-item:hover{
+    background-color: transparent;
+    font-weight: 700;
+   
+}
+.navbar{
+    --bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2800, 232, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+.About-us, .Documets, .Projects, .GenerateArt{
+    padding: 10px 25px;
+    font-size:20px;
+    margin:10px;
+    border-radius: 5px;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.About-us:hover,.Documets:hover,.Projects:hover,.GenerateArt:hover{
+    /* border:1px solid black; */
+    box-shadow: 1px 2px 2px black;
+}
+.animationcircle{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    filter: invert(0.1);
+    float: right;
+    margin-bottom: 50px;
+    margin-top:50px;
+}
+.heading1{
+    margin-top:50px;
+    /* padding:10px 20px ; */
+    text-align: center;
+   font-size:6vw;
+}
+.heading2{
+    margin:2vw;
+    padding:10px 20px ;
+    text-align: left;
+   font-size:4vw;
+}
+.passwordimge{
+    width:30vw;
+    height:30vw;
+    min-width: 270px;
+    min-height:270px;
+    
+    /* float: left; */
+}
+.password-h1 , .password-h2{
+    padding:5px;
+    margin:10px;
+}
+.password-h2{
+    text-align: justify;
+    font-size:2.5vw;
+}
+.paswordgenbox{
+    /* overflow: scroll; */
+    margin:10px;
+    /* display:flex; */
+}
+span a{
+    color:white;
+    text-decoration: none;
+}
+span a:hover{
+    color:white;
+}
+.whythisprojectimg{
+    float: right;
+    width: 4vw;
+    height: 5vw;
+    min-width:200px;
+    min-height: 400px;
+}
+.whythisproject{
+    padding:10px;
+    margin:10px;
+    text-align: justify;
+}
+.win-1-footer{
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8995973389355743) 23%, rgba(0,0,0,0.7903536414565826) 44%, rgba(0,0,0,0.6839110644257703) 62%, rgba(0,0,0,0.6110819327731092) 81%, rgba(0,0,0,0.5746673669467788) 100%);
+text-align: center;
+}
+.footertext{
+    padding:30px;
+    margin:10px;
+}
+.socialmedia-icon{
+    width:60px;
+    height:55px;
+    padding:10px;
+}
+/* Passowrd Generatory CSS Start  */
+.Pswd-H1-passgen{
+    text-align:center;
+}
+.output-pass-image{
+    width: 20vw;
+    height: 20vw;
+    min-height: 300px;
+    min-width: 300px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.Pass-Form-lables{
+    padding: 5px;
+    margin:10px 20px;
+    color:white;
+    font-size:25px;
+    /* margin-left:30px; */
+}
+#input-number{
+    outline: none;
+    text-align:center;
+    font-size:20px;
+    color:white;
+    text-shadow:1px 1px 1px solid black;
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid red;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
