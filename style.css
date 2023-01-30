@@ -321,6 +321,7 @@ input:checked+.slider:before {
     min-height: 100px;
     margin: 10px;
     width: 22vw;
+    border:1px solid #33ffff;
 }
 
 .radiocheckbtnlable {
