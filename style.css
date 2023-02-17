@@ -226,6 +226,7 @@ span a:hover {
 }
 
 .ApplayChangesBtn {
+    align-self: center;
     padding: 10px 30px;
     background-color: transparent;
     color: white;
@@ -233,11 +234,38 @@ span a:hover {
     border-radius: 5px;
     font-size: 25px;
     border: 1px solid #33ffff;
+    position: relative;
+    overflow:hidden;
 }
-
-.ApplayChangesBtn:hover {
-    color: black;
-    background-color: #33ffff;
+.ApplayChangesBtn::before{
+    content: "";
+    position: absolute;
+    left:50%;
+    top:50%;
+    width: 0px;
+    height: 0px;
+    background-color: aqua;
+    transform:translate(-50%,-50%);
+    transition: all 1s;
+    z-index: -1;
+}
+/* content:"";
+    position:absolute;
+    background-color:red;
+    width:0px;
+    height:0px;
+    left:var(--xPos);
+    top:var(--yPos);
+    transform:translate(-50%,-50%);
+    transition: width 0.7s,height 0.7s;
+    border-radius:50%; */
+.ApplayChangesBtn:hover::before {
+    width: 500px;
+    height: 500px;
+}
+.ApplayChangesBtn:hover{
+    color:Black;
+    z-index: 1;
 }
 
 /* The switch - the box around the slider */
