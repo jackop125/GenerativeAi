@@ -14,7 +14,7 @@ body {
     padding: 0 5%;
     background-color: rgb(0, 0, 0);
     z-index: 1;
-    
+    overflow-x:hidden;
 }
 .container-fluid{
     /* background-color: rgba(0, 0, 0, 0.772); */
