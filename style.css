@@ -201,6 +201,7 @@ span a:hover {
     min-width: 300px;
     background-color: white;
     margin-bottom: 20px;
+    box-shadow: 0px 0px 5px gray;
 }
 
 .Pass-Form-lables {
