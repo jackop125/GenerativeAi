@@ -16,6 +16,7 @@ body {
     z-index: 1;
     overflow-x:hidden;
     font-family: 'Noto Sans', sans-serif;
+    color:white;
 }
 .container-fluid{
     /* background-color: rgba(0, 0, 0, 0.772); */
@@ -370,4 +371,23 @@ body::-webkit-scrollbar-track{
 body::-webkit-scrollbar-thumb{
     background-color:  #33ffff;
     border-radius: 10px;
+}
+
+.select-wallpaper-type{
+    margin:15px;
+}
+.select-wallpaper-type img{
+    box-shadow: 0px 0px 7px gray;
+}
+.select-wallpaper-type img:hover{
+    box-shadow: 3px 3px 7px gray;
+}
+
+.div-pos-center{
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+}
+.img-shadow{
+    box-shadow: 0px 0px 7px gray;
 }
