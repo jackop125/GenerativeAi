@@ -40,7 +40,7 @@ TryNextWallpaperBtn1.addEventListener('click', function () {
                 WallpaperArea1.setAttribute("src", `images/wallpapers/type-1/wallpaper%20(${randomWallpaper}).jpg`)
                 WallpaperDownloadBtn1.setAttribute("href", `images/wallpapers/type-1/wallpaper%20(${randomWallpaper}).jpg`)
                 HashCode1.value=HashCodeGen();
-                TryNextWallpaperBtn1.innerHTML = "Succesfull ✅";
+                TryNextWallpaperBtn1.innerHTML = "Generated Hash";
                 setTimeout(function () {
                     TryNextWallpaperBtn1.innerHTML = "Try Next";
                 }, 1000)
@@ -81,7 +81,7 @@ TryNextWallpaperBtn2.addEventListener('click', function () {
                 WallpaperArea2.setAttribute("src", `images/wallpapers/type-2/wallpaper%20(${randomWallpaper}).jpg`);
                 WallpaperDownloadBtn2.setAttribute("href", `images/wallpapers/type-2/wallpaper%20(${randomWallpaper}).jpg`);
                 HashCode2.value=HashCodeGen();
-                TryNextWallpaperBtn2.innerHTML = "Succesfull ✅";
+                TryNextWallpaperBtn2.innerHTML = "Generated Hash";
                 setTimeout(function () {
                     TryNextWallpaperBtn2.innerHTML = "Try Next";
                 }, 1000)
@@ -122,7 +122,7 @@ TryNextWallpaperBtn3.addEventListener('click', function () {
                 WallpaperArea3.setAttribute("src", `images/wallpapers/type-3/wallpaper%20(${randomWallpaper}).jpg`)
                 WallpaperDownloadBtn3.setAttribute("href", `images/wallpapers/type-3/wallpaper%20(${randomWallpaper}).jpg`)
                 HashCode3.value=HashCodeGen();
-                TryNextWallpaperBtn3.innerHTML = "Succesfull ✅";
+                TryNextWallpaperBtn3.innerHTML = "Generated Hash";
                 setTimeout(function () {
                     TryNextWallpaperBtn3.innerHTML = "Try Next";
                 }, 1000)
@@ -165,7 +165,7 @@ TryNextWallpaperBtn4.addEventListener('click', function () {
                 WallpaperArea4.setAttribute("src", `images/wallpapers/type-4/wallpaper%20(${randomWallpaper}).jpg`)
                 WallpaperDownloadBtn4.setAttribute("href", `images/wallpapers/type-4/wallpaper%20(${randomWallpaper}).jpg`)
                 HashCode4.value=HashCodeGen();
-                TryNextWallpaperBtn4.innerHTML = "Succesfull ✅";
+                TryNextWallpaperBtn4.innerHTML = "Generated Hash";
                 setTimeout(function () {
                     TryNextWallpaperBtn4.innerHTML = "Try Next";
                 }, 1000)
