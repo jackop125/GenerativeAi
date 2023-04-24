@@ -16,8 +16,24 @@ TryNextWallpaperBtn1.addEventListener('click',function(){
     if(randomWallpaper==0){
         randomWallpaper=99;
     }
-    WallpaperArea1.setAttribute("src", `images/wallpapers/type-1/wallpaper%20(${randomWallpaper}).jpg`)
-    WallpaperDownloadBtn1.setAttribute("href",  `images/wallpapers/type-1/wallpaper%20(${randomWallpaper}).jpg`)
+    TryNextWallpaperBtn1.innerHTML="Loading...";
+    setTimeout(function(){
+        TryNextWallpaperBtn1.innerHTML="Generating img";
+        setTimeout(function(){
+            TryNextWallpaperBtn1.innerHTML="Generating Hash";
+            setTimeout(function(){
+                WallpaperArea1.setAttribute("src", `images/wallpapers/type-1/wallpaper%20(${randomWallpaper}).jpg`)
+                WallpaperDownloadBtn1.setAttribute("href",  `images/wallpapers/type-1/wallpaper%20(${randomWallpaper}).jpg`)
+                TryNextWallpaperBtn1.innerHTML="Succesfull ✅";
+                setTimeout(function(){
+                    TryNextWallpaperBtn1.innerHTML="Try Next";
+                },1000)
+            },1000)
+        },2000)
+    },2000)
+    
+    
+    
 })
 
 // Type 2 Wallpaper Changer
