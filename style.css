@@ -393,3 +393,12 @@ body::-webkit-scrollbar-thumb{
 .img-shadow{
     box-shadow: 0px 0px 7px gray;
 }
+.Download-btn{
+    padding:10px 20px;
+    text-decoration: none;
+    color:white;
+    border:1px solid white;
+    margin:10px;
+    display:block;
+    background-color: transparent;
+}
