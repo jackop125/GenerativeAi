@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+  <style>
+    body {
+      padding: 0px;
+    }
+
+    .hero {
+      background-color: rgba(0, 0, 0, 0.797);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="hero col-12">
+        <video autoplay loop muted plays-inline class="background-video">
+          <source src="images/bgvideo.mp4">
+        </video>
+        <nav class="navbar navbar-expand-lg navbar-light Nav-Bar  ">
+          <div class="container-fluid ">
+            <a class="navbar-brand text-white text-center GenerateArt" href="index.html">Generative Art</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" style="color:white;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown text-white">
+                  <a class="nav-link dropdown-toggle text-white text-center Projects" href="#"
+                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Projects
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item text-white" href="passwordgen.html">Password Generation</a></li>
+                    <li><a class="dropdown-item text-white" href="wallpapergen.html">Wallpaper Generation</a></li>
+                    <li><a class="dropdown-item text-white" href="abstractartgen.html">Abstract Art Generation</a></li>
+                    <li><a class="dropdown-item text-white" href="mapgen.html">Map Generation</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-white text-center Documets" aria-current="page"
+                    href="document.html">Document</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white text-center About-us" href="aboutus.html">About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>'
+        <div class="col-12 ">
+          <div class="accordian" style="padding-bottom:70px;">
+            <div>
+              <label for="one">Paper 1 <span>&#8628</span></label>
+              <input type="checkbox" id="one" checked>
+              <div>
+                <hr style="border:1px solid white">
+                <center>
+                  <!-- <button class="custom-btn ">Read More</button> -->
+                  <button class="custom-btn btn-7 " style="display:block; margin:5px;" id="Doc-paper1"><span>Paper 1</span></button>
+                  <!-- <button class="" >Document</button> -->
+                  <button class="custom-btn btn-7 " style="display:block; margin:5px;" id="Doc-certificate1">Certificates</button>
+                </center>
+              </div>
+            </div>
+            <div>
+              <label for="two">Paper 2 <span>&#8628</span></label>
+              <input type="checkbox" id="two" checked>
+              <div>
+                <hr style="border:1px solid white" >
+                <center>
+                  <button class="custom-btn btn-7 " style="display:block; margin:5px;" id="Doc-paper2">Peper 2</button>
+                  <button class="custom-btn btn-7 " style="display:block; margin:5px;" id="Doc-certificate2">Certificates</button>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Document Overlay -->
+      <div class="Document-pdf-shower-1" >
+        <button class="close-btn" id="cls-btn">X</button>
+        <object data="doc/doc1.pdf" width="100%" height="100%">
+        </object>
+      </div>
+
+      <div class="certificate-pdf-shower-1" >
+        <button class="close-btn" id="cls-btn-2">X</button>
+        <object data="doc/certificates.pdf" width="100%" height="100%">
+        </object>
+      </div>
+
+
+      <div class="Document-pdf-shower-2" >
+        <button class="close-btn" id="cls-btn3">X</button>
+        <object data="doc/doc2.pdf" width="100%" height="100%">
+        </object>
+      </div>
+
+      <div class="certificate-pdf-shower-2" >
+        <button class="close-btn" id="cls-btn-4">X</button>
+        <object data="doc/certificates2.pdf" width="100%" height="100%">
+        </object>
+      </div>
+
+
+    </div>
+  </div>
+  <script src="Bootstrap/js/bootstrap.bundle.js"></script>
+  <script>
+    document.getElementById('cls-btn').addEventListener("click",()=>{
+      document.querySelector(".Document-pdf-shower-1").style = "display:none;"
+    })
+
+    document.getElementById('Doc-paper1').addEventListener('click',()=>{
+      document.querySelector(".Document-pdf-shower-1").style = "display:block;"
+    })
+
+
+
+    document.getElementById('cls-btn-2').addEventListener("click",()=>{
+      document.querySelector(".certificate-pdf-shower-1").style = "display:none;"
+    })
+
+    document.getElementById('Doc-certificate1').addEventListener('click',()=>{
+      document.querySelector(".certificate-pdf-shower-1").style = "display:block;"
+    })
+
+
+    document.getElementById('cls-btn3').addEventListener("click",()=>{
+      document.querySelector(".Document-pdf-shower-2").style = "display:none;"
+    })
+
+    document.getElementById('Doc-paper2').addEventListener('click',()=>{
+      document.querySelector(".Document-pdf-shower-2").style = "display:block;"
+    })
+
+
+
+    document.getElementById('cls-btn-4').addEventListener("click",()=>{
+      document.querySelector(".certificate-pdf-shower-2").style = "display:none;"
+    })
+
+    document.getElementById('Doc-certificate2').addEventListener('click',()=>{
+      document.querySelector(".certificate-pdf-shower-2").style = "display:block;"
+    })
+  </script>
+</body>
+
+</html>
