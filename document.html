@@ -19,6 +19,43 @@
     .hero {
       background-color: rgba(0, 0, 0, 0.797);
     }
+
+    .accordian>div {
+      margin: 20px auto;
+      width: 600px;
+      padding: 10px;
+      box-shadow: 0px 0px 10px gray;
+    }
+
+    .accordian>div>input[type="checkbox"] {
+      display: none;
+    }
+
+    .accordian>div>label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 5px 10px;
+      font-size: 19px;
+    }
+
+    .accordian>div label::after {
+      content: ;
+      font-weight: bolder;
+    }
+
+    .accordian>div>div {
+      padding: 0 10px;
+      height: 0;
+      overflow: hidden;
+      transition: all 0.8s;
+    }
+
+    .accordian>div>input[type="checkbox"]:checked+div {
+      min-height: 150px;
+      height: fit-content;
+    }
   </style>
 </head>
 
@@ -70,9 +107,11 @@
                 <hr style="border:1px solid white">
                 <center>
                   <!-- <button class="custom-btn ">Read More</button> -->
-                  <button class="custom-btn btn-7 " style="display:block; margin:5px;" id="Doc-paper1"><span>Paper 1</span></button>
+                  <button class="custom-btn btn-7 " style="display:block; margin:5px;" id="Doc-paper1"><span>Paper
+                      1</span></button>
                   <!-- <button class="" >Document</button> -->
-                  <button class="custom-btn btn-7 " style="display:block; margin:5px;" id="Doc-certificate1">Certificates</button>
+                  <button class="custom-btn btn-7 " style="display:block; margin:5px;"
+                    id="Doc-certificate1">Certificates</button>
                 </center>
               </div>
             </div>
@@ -80,10 +119,11 @@
               <label for="two">Paper 2 <span>&#8628</span></label>
               <input type="checkbox" id="two" checked>
               <div>
-                <hr style="border:1px solid white" >
+                <hr style="border:1px solid white">
                 <center>
                   <button class="custom-btn btn-7 " style="display:block; margin:5px;" id="Doc-paper2">Peper 2</button>
-                  <button class="custom-btn btn-7 " style="display:block; margin:5px;" id="Doc-certificate2">Certificates</button>
+                  <button class="custom-btn btn-7 " style="display:block; margin:5px;"
+                    id="Doc-certificate2">Certificates</button>
                 </center>
               </div>
             </div>
@@ -92,26 +132,26 @@
       </div>
 
       <!-- Document Overlay -->
-      <div class="Document-pdf-shower-1" >
+      <div class="Document-pdf-shower-1">
         <button class="close-btn" id="cls-btn">X</button>
         <object data="doc/doc1.pdf" width="100%" height="100%">
         </object>
       </div>
 
-      <div class="certificate-pdf-shower-1" >
+      <div class="certificate-pdf-shower-1">
         <button class="close-btn" id="cls-btn-2">X</button>
         <object data="doc/certificates.pdf" width="100%" height="100%">
         </object>
       </div>
 
 
-      <div class="Document-pdf-shower-2" >
+      <div class="Document-pdf-shower-2">
         <button class="close-btn" id="cls-btn3">X</button>
         <object data="doc/doc2.pdf" width="100%" height="100%">
         </object>
       </div>
 
-      <div class="certificate-pdf-shower-2" >
+      <div class="certificate-pdf-shower-2">
         <button class="close-btn" id="cls-btn-4">X</button>
         <object data="doc/certificates2.pdf" width="100%" height="100%">
         </object>
@@ -122,40 +162,40 @@
   </div>
   <script src="Bootstrap/js/bootstrap.bundle.js"></script>
   <script>
-    document.getElementById('cls-btn').addEventListener("click",()=>{
+    document.getElementById('cls-btn').addEventListener("click", () => {
       document.querySelector(".Document-pdf-shower-1").style = "display:none;"
     })
 
-    document.getElementById('Doc-paper1').addEventListener('click',()=>{
+    document.getElementById('Doc-paper1').addEventListener('click', () => {
       document.querySelector(".Document-pdf-shower-1").style = "display:block;"
     })
 
 
 
-    document.getElementById('cls-btn-2').addEventListener("click",()=>{
+    document.getElementById('cls-btn-2').addEventListener("click", () => {
       document.querySelector(".certificate-pdf-shower-1").style = "display:none;"
     })
 
-    document.getElementById('Doc-certificate1').addEventListener('click',()=>{
+    document.getElementById('Doc-certificate1').addEventListener('click', () => {
       document.querySelector(".certificate-pdf-shower-1").style = "display:block;"
     })
 
 
-    document.getElementById('cls-btn3').addEventListener("click",()=>{
+    document.getElementById('cls-btn3').addEventListener("click", () => {
       document.querySelector(".Document-pdf-shower-2").style = "display:none;"
     })
 
-    document.getElementById('Doc-paper2').addEventListener('click',()=>{
+    document.getElementById('Doc-paper2').addEventListener('click', () => {
       document.querySelector(".Document-pdf-shower-2").style = "display:block;"
     })
 
 
 
-    document.getElementById('cls-btn-4').addEventListener("click",()=>{
+    document.getElementById('cls-btn-4').addEventListener("click", () => {
       document.querySelector(".certificate-pdf-shower-2").style = "display:none;"
     })
 
-    document.getElementById('Doc-certificate2').addEventListener('click',()=>{
+    document.getElementById('Doc-certificate2').addEventListener('click', () => {
       document.querySelector(".certificate-pdf-shower-2").style = "display:block;"
     })
   </script>

@@ -412,11 +412,12 @@ body::-webkit-scrollbar-thumb{
 .accordian{
     
 }
-.accordian > div{
+/* .accordian > div{
     margin:20px auto;
     width:600px;
     padding:10px;
     box-shadow:0px 0px 10px gray;
+    display: inline-block;
 }
 .accordian > div > input[type="checkbox"]{
     display: none;
@@ -441,8 +442,8 @@ body::-webkit-scrollbar-thumb{
 }
 .accordian > div > input[type="checkbox"]:checked + div{
     min-height:150px;
-    height: fit-content;
-}
+    height:250px;
+} */
 
 .Document-pdf-shower-1{
     position:absolute;

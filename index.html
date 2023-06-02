@@ -11,6 +11,40 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+  <style>
+    .accordian > div{
+    margin:20px auto;
+    width:600px;
+    padding:10px;
+    box-shadow:0px 0px 10px gray;
+    display: inline-block;
+}
+.accordian > div > input[type="checkbox"]{
+    display: none;
+}
+.accordian > div > label{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding:5px 10px;
+    font-size:19px;
+}
+.accordian > div  label::after{
+    content:;
+    font-weight: bolder;
+}
+.accordian > div > div{
+    padding:0 10px;
+    height:0;
+    overflow: hidden;
+    transition: all 0.8s;
+}
+.accordian > div > input[type="checkbox"]:checked + div{
+    min-height:150px;
+    height:250px;
+}
+  </style>
 </head>
 
 <body>
